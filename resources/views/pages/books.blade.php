@@ -4,7 +4,7 @@
 
     <section class="breadcrumbs_block clearfix parallax">
         <div class="container center">
-            <h2><b></b> Поэмы</h2>
+            <h2><b></b> Книги</h2>
             <p>Что люблю, что ненавижу, что курю, когда пишу</p>
         </div>
     </section><!-- //BREADCRUMBS -->
@@ -22,12 +22,24 @@
                 <!-- BLOG BLOCK -->
                 <div class="blog_block col-lg-9 col-md-9 padbot50">
 
-                    @foreach($poems as $poem)
+                    @foreach($books as $book)
                         <!-- BLOG POST -->
                             <div class="blog_post margbot50 clearfix" data-animated="fadeInUp">
+                                <div class="blog_post_img">
+                                    <img src="{{ asset($book->image->url_way_to_picture) }}" alt="" />
+                                    <a class="zoom" href="{{route('book.name',[$book->url_name])}}" ></a>
+                                </div>
                                 <div class="blog_post_descr">
-                                    <a class="blog_post_title" href="{{route('book.name',[$poem->url_name])}}" >{{ $poem->name }}</a>
+                                    <div class="blog_post_date">{{$book->date_of_writing}}</div>
+                                    <a class="blog_post_title" href="{{route('book.name',[$book->url_name])}}" >{{ $book->name }}</a>
+                                    <!--<ul class="blog_post_info">
+                                        <li><a href="javascript:void(0);" >Admin</a></li>
+                                        <li><a href="javascript:void(0);" >Creative</a></li>
+                                        <li><a href="javascript:void(0);" >3 Comments</a></li>
+                                    </ul> -->
                                     <hr>
+                                    <div class="blog_post_content">{{ mb_substr($book->description, 0, 300, 'utf-8')}}...</div>
+                                    <a class="read_more_btn" href="{{ route('book.name', [$book->url_name]) }}" >Читать дальше</a>
                                 </div>
                             </div><!-- //BLOG POST -->
                     @endforeach

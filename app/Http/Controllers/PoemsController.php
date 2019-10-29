@@ -14,7 +14,9 @@ class PoemsController extends Controller
      */
     public function index()
     {
-        //
+        $poems = Poems::all();
+        return  view('pages.poems', compact('poems'));
+
     }
 
     /**

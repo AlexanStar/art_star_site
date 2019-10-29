@@ -21,18 +21,18 @@
             <div class="pull-right">
                 <nav class="navmenu center">
                     <ul>
-                        <li class="first scroll_btn"><a href="index.html">Home</a></li>
-                        <li class="scroll_btn"><a href="index.html#about">About Us</a></li>
-                        <li class="scroll_btn"><a href="index.html#projects">Projects</a></li>
-                        <li class="scroll_btn"><a href="index.html#team">Team</a></li>
-                        <li class="scroll_btn"><a href="index.html#news">News</a></li>
-                        <li class="scroll_btn last"><a href="index.html#contacts">Contacts</a></li>
+                        <li class="first scroll_btn"><a href="index.html">Домашняя страница</a></li>
+                        <li class="scroll_btn"><a href="index.html#about">Всё о нас</a></li>
+                        <li class="scroll_btn"><a href="index.html#projects">Проекты</a></li>
+                        <li class="scroll_btn"><a href="index.html#team">Команда</a></li>
+                        <li class="scroll_btn"><a href="index.html#news">Новости</a></li>
+                        <li class="scroll_btn last"><a href="index.html#contacts">Контакты</a></li>
                         <li class="sub-menu active">
-                            <a href="javascript:void(0);">Pages</a>
+                            <a href="javascript:void(0);">Страницы</a>
                             <ul>
-                                <li class="active"><a href="blog.html">Blog</a></li>
-                                <li><a href="blog-post.html">Blog Post</a></li>
-                                <li><a href="portfolio-post.html">Portfolio Single Work</a></li>
+                                <li class="active"><a href="blog.html">Блог</a></li>
+                                <li><a href="blog-post.html">Блог Пост</a></li>
+                                <li><a href="portfolio-post.html">Портфолио для сотрудничества</a></li>
                             </ul>
                         </li>
                     </ul>

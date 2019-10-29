@@ -13,13 +13,13 @@
 
 Route::get( '/', 'Controller@index');
 
-Route::get('/poems','Controller@poems');
+Route::get('/poems','PoemsController@index');
 Route::get('/prose','Controller@index');
-Route::get('/book','Controller@index');
+Route::get('/books','BookController@index');
 
 Route::get('/poems/{name}','Controller@index');
 Route::get('/prose/{name}','Controller@index');
-Route::get('/book/{name}','Controller@index');
+Route::get('/book/{name}','Controller@index')->name('book.name');
 
 Route::get('/poems/{name}/{page}','Controller@index');
 Route::get('/prose/{name}/{page}','Controller@index');
